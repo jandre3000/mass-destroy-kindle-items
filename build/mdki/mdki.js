@@ -17,11 +17,14 @@ function mdki(){
 		label=document.createElement('label');
 		label.for='mdki_input';
 		label.innerHTML='enter the title of the items you wish to delete';
+		
 		input=document.createElement('input');
 		input.type='text';
 		input.name='mdki_input';
 		input.id='mdki_input';
 		input.value='';
+    input.addEventListener('keyup', mdki_keyup);
+		
 		button=document.createElement('button');
 		button.id='mdki_button';
 		button.innerHTML='delete these items';
@@ -31,7 +34,7 @@ function mdki(){
 		close_div.id="close_div";
 		close_div.innerHTML= '&#10006';		
 		close_div.addEventListener('click', close);
-
+    
 		div.appendChild(h1);
 		div.appendChild(hr);
 		div.appendChild(label);
@@ -47,19 +50,33 @@ function mdki(){
 		button.setAttribute('disabled','disabled'); 
 		delete_items();
 	}
-	
+  
+  function mdki_keyup(event){
+    v=input.value;
+		for(var i = 0; i<b.length; i++) {
+      b[i].className = b[i].className.replace(/mdki_highlight/g,'');        
+      if (b[i].textContent.match(v)){
+        b[i].className += " mdki_highlight";  
+      }
+    }
+  }
+
 	function close(event){
 		div.className = '';
+		input.value = '';
+		for(var i = 0; i<b.length; i++) {  
+      b[i].className = b[i].className.replace(/mdki_highlight/g,'');        
+    }
 	}
 
 	make_mdki_dom();
 	input.focus();
 	div.className = 'show';
-
+  
 	function delete_items(){
 		if (a.length == b.length){
 			for(var i = 0; i<b.length; i++) {
-				if (b[i].textContent == v) {
+				if (b[i].textContent.match(v)) {
 					c.push([i]);
 					count +=1;
 				}

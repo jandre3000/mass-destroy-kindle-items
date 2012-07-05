@@ -103,3 +103,8 @@ cursor: pointer;
 #mdki_container #close_div:hover {
 color:#CC1B00; 
 }
+
+.mdki_highlight {
+  font-weight: bold; 
+  color: #CC1B00; 
+}
