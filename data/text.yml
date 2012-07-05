@@ -4,7 +4,7 @@ bookmarklet_js:
     a=document.getElementById('mdki_container');
     if(a!=null){a.className='show'}
     else{
-    url='http://massdestroykindleitems.com/mdki/mdki';
+    url='http://mdki.com/mdki/mdki';
     mdki_js=document.createElement('SCRIPT');
     mdki_js.type='text/javascript';
     mdki_js.src=url+'.js';
