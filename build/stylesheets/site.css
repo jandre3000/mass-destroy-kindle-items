@@ -1,3 +1,4 @@
+/* line 17, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,86 +15,108 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline; }
 
-body {
+/* line 22, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1; }
 
+/* line 24, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
+/* line 26, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 28, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
+/* line 30, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
+  /* line 103, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
+/* line 32, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
+/* line 116, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+/* line 21, site.css.scss */
 body {
   font-family: sans-serif;
   color: #2a2a2a; }
 
+/* line 26, site.css.scss */
 a {
   color: #0388a6; }
+  /* line 24, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #009ce0; }
 
+/* line 31, site.css.scss */
 #main h1 {
-  font: bold 26px/48px Helvetica neue, Helvetica, Arial, Sans-serif;
+  font: bold 26px/48px Helvetica neue,Helvetica,Arial,Sans-serif;
   text-align: center;
   text-transform: capitalize;
   color: #555; }
+/* line 38, site.css.scss */
 #main p {
   width: 50em;
   margin: 0 auto;
-  font: 300 14px/21px Helvetica neue, Helvetica, Arial, Sans-serif;
+  font: 300 14px/21px Helvetica neue,Helvetica,Arial,Sans-serif;
   margin-top: 1em;
   margin-bottom: 1.5em;
   letter-spacing: 1px; }
+/* line 47, site.css.scss */
 #main strong {
   font-weight: 500; }
+/* line 51, site.css.scss */
 #main h2 {
   text-align: center;
-  font: bold 18px/36px Helvetica neue, Helvetica, Arial, Sans-serif;
+  font: bold 18px/36px Helvetica neue,Helvetica,Arial,Sans-serif;
   color: #555; }
+/* line 57, site.css.scss */
 #main hr {
   width: 35em; }
+/* line 61, site.css.scss */
 #main ol {
   list-style-type: decimal;
   list-style-position: outside;
   padding-left: 33px;
   width: 27em;
   margin: 0 auto; }
+  /* line 67, site.css.scss */
   #main ol li {
     margin-bottom: 0.5em;
-    font: 400 14px/21px Helvetica neue, Helvetica, Arial, Sans-serif;
+    font: 400 14px/21px Helvetica neue,Helvetica,Arial,Sans-serif;
     letter-spacing: 1px; }
+/* line 74, site.css.scss */
 #main .centered {
   text-align: center; }
+/* line 78, site.css.scss */
 #main em {
   font-style: italic;
   font-family: Georgia, Times New Roman, Serif;
   letter-spacing: 0;
   color: #E47911;
   font-size: 18px; }
+/* line 85, site.css.scss */
 #main #dmki {
   text-align: center; }
+  /* line 88, site.css.scss */
   #main #dmki #dmki_link {
     position: relative;
     top: 0;
@@ -109,17 +132,20 @@ a {
     font-weight: bold;
     border: 5px solid;
     border-radius: 10px;
-    box-shadow: 0px 0px 0px 0px black, inset 0px 0px 7px 1px #ffbd7c;
+    box-shadow: 0px 0px 0px 0px black, inset 0px 0px 7px 1px #FFBD7C;
     -webkit-transition: all 0.2s; }
+  /* line 107, site.css.scss */
   #main #dmki #dmki_link:hover {
-    box-shadow: 0px 5px 19px -2px black, inset 0px 0px 7px 1px #ffbd7c;
+    box-shadow: 0px 5px 19px -2px black, inset 0px 0px 7px 1px #FFBD7C;
     top: -3px;
     background-color: #FFF5AD; }
 
+/* line 115, site.css.scss */
 #footer {
   background-color: #666;
   padding: 50px;
   color: white;
-  font: 400 14px/21px Helvetica neue, Helvetica, Arial, Sans-serif; }
+  font: 400 14px/21px Helvetica neue,Helvetica,Arial,Sans-serif; }
+  /* line 121, site.css.scss */
   #footer a {
     color: #FFF5AD; }
