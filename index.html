@@ -1,88 +1,118 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8' />
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
-    <link href='images/favicon.png' rel='shortcut icon' />
-    <link href="/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
-    <title>
-      Delete Multiple Kindle Items
-    </title>
-  </head>
-  <body class='index'>
-    <div id='main' role='main'>
-      <h1>
-  &#9760; Mass Destroy Kindle Items &#9760;
-</h1>
-<p>
-  <strong>New items gets sent to your Kindle every single day.</strong>
-  Let's say you're using something like <a href="http://www.instapaper.com/extras">Instapaper</a> or <a href="http://kindle4rss.com/">Kindle4RSS</a>, and your feeling a bit ambitious, so you opt-in for the <em>daily</em> deliveries.
-</p>
-<p>
-  As reality sets in, you begin realizing that <strong>you actually read far less than you think</strong>. But the new items keep coming, and before you know it, they become nothing more than a reminder of your failed expectations.
-</p>
-<p>
-  So now you've finally had enough, you've come to your senses and cancelled the daily deliveries.
-  But all that stuff on your kindle is still there. It's not hurting anybody, but you still want to delete it.
-</p>
-<p>
-  Now here comes the hard part. <strong>How do you delete all that stuff?</strong> do you delete each item from your kindle device? that won't get rid of it from <a href="https://www.amazon.com/gp/digital/fiona/manage?ie=UTF8&ref_=ya_kindle_sb_myk_button_css&#All">Your Kindle Library</a> (and it'll take all afternoon). So you go to  <a href="https://www.amazon.com/gp/digital/fiona/manage?ie=UTF8&ref_=ya_kindle_sb_myk_button_css&#All">Your Kindle Library </a>. You notice that 'action' button beside each item. You click 'Delete From Library'. You get the confirmation pop-up. You click 'yes'. Then you repeat that 100 times?
-  I don't think so.
-</p>
-<h2>
-  Introducing The MDKI (Mass Destroy kindle items) Bookmarklet:
-</h2>
-<div id='dmki'>
-  <a href='[" javascript:(function(){ a=document.getElementById(&apos;mdki_container&apos;); if(a!=null){a.className=&apos;show&apos;} else{ url=&apos;http://massdestroykindleitems.com/mdki/mdki&apos;; mdki_js=document.createElement(&apos;SCRIPT&apos;); mdki_js.type=&apos;text/javascript&apos;; mdki_js.src=url+&apos;.js&apos;; mdki_css=document.createElement(&apos;LINK&apos;); mdki_css.type=&apos;text/css&apos;; mdki_css.rel=&apos;stylesheet&apos;; mdki_css.media=&apos;screen&apos;; mdki_css.href=url+&apos;.css&apos;; document.getElementsByTagName(&apos;head&apos;)[0].appendChild(mdki_css); document.getElementsByTagName(&apos;head&apos;)[0].appendChild(mdki_js); }; }) (); "]' id='dmki_link'>
-    &#9760; MDKI &#9760;
-  </a>
-</div>
-<p class='centered'>
-  <em>
-    drag this into your bookmarks bar, or click on it to see what it does first
-  </em>
-</p>
-<hr />
-<p>
-  The MDKI bookmarklet lets you easily delete multiple items from your Kindle Library. Be careful. Once you delete an item, it'll be gone forever! even if you paid for it. To use the bookmarklet, follow these simple steps:
-  <ol>
-    <li>
-      Drag this orange bookmarklet into your Bookmarks Bar.
-    </li>
-    <li>
-      Go to Your Kindle Library.
-    </li>
-    <li>
-      Click on the "&#9760; MDKI &#9760;" in your Bookmarks Bar.
-    </li>
-    <li>
-      Type the title of the items you want to delete.
-    </li>
-    <li>
-      Click 'delete items'.
-    </li>
-    <li>
-      You'll be presented with a dialog box with the number of items that will be deleted.
-    </li>
-    <li>
-      Click 'accept' to delete the selected items.
-    </li>
-  </ol>
-</p>
-    </div>
-    <div id='footer'>
+<html lang="en" slick-uniqueid="3"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Mass Detroy Kindle Items</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css"></style></head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a target="_BLANK" href="https://github.com/j4n-co/mass-destroy-kindle-items">Fork Me On Github</a></li>
+        </ul>
+        <h3 class="text-muted">☠ Mass Destroy Kindle Items ☠</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1 id="header">Bulk delete items from your Amazon library with ease.</h1>
+        <p class="lead">
+        Drag this green button into your bookmarks-bar to install. 
+        </p>
+        <p>
+          <a class="btn btn-lg btn-success" href='javascript:(function(){ a=document.getElementById(&apos;mdki_container&apos;); if(a!=null){a.className=&apos;show&apos;} else{ url=&apos;https://j4n-co.github.com/mass-destroy-kindle-items/mdki/mdki&apos;; mdki_js=document.createElement(&apos;SCRIPT&apos;); mdki_js.type=&apos;text/javascript&apos;; mdki_js.src=url+&apos;.js&apos;; mdki_css=document.createElement(&apos;LINK&apos;); mdki_css.type=&apos;text/css&apos;; mdki_css.rel=&apos;stylesheet&apos;; mdki_css.media=&apos;screen&apos;; mdki_css.href=url+&apos;.css&apos;; document.getElementsByTagName(&apos;head&apos;)[0].appendChild(mdki_css); document.getElementsByTagName(&apos;head&apos;)[0].appendChild(mdki_js); }; }) ();' id='dmki_link' name="MDKI">Mass Destroy Kindle Items</a>
+        </p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h4 id="problem">The Problem</h4>
+          <p>
+            In order to delete an item from your kindle library, this is what you do: 
+            <ul>
+              <li>
+                Go to your Kindle Library page
+              </li>
+              <li>
+                Click on 'Actions...' beside the item you want to delete
+              </li>
+              <li>
+                Click 'Delete From Library'
+              </li>
+            </ul>
+          </p>
+          <p>
+          <img class="img-responsive" src="amazon_library_delete.jpg" />
+          </p>
+          <br/>
+          <p class="lead">
+          This workflow is o.k. for deleting items individually, but what if you want to delete a bunch of items at once? 
+          </p>
+        </div>
+
+        <div class="col-lg-12">
+          <h4 id="solution">The Solution</h4>
+          <p>
+            I created this bookmarklet that injects some javascript onto the Kindle library page, allowing you to search 
+            for item by title, and delete every item matching that title. 
+          </p>
+          <p>
+            <img class="img-responsive" src="mdki_screenshot.jpg" />
+          </p>
+        </div>
+
+        <div class="col-lg-12">
+          <h4 id="code">The Code</h4>
+          <p>
+            The bookmarklet injects the following javascript onto the page. 
+            It creates a DOM element with a text input, sets a keyup event on the input, finds the ID's of items that matches the text input, then calls the function amazon uses to delete items, <code>Fion.deleteItem</code>.
+          </p>
+          <pre>
+            <code>
+  function mdki(){<br/>  <br/>  var div;<br/>  var input;<br/>  var button;<br/>  var v; <br/>  var a = document.getElementsByClassName('rowBodyCollapsed');<br/>  var b = document.getElementsByClassName('headerTitle');<br/>  var c = [];<br/>  var count = 0; <br/><br/>  function make_mdki_dom(){<br/>    div = document.createElement('div');<br/>    div.id='mdki_container';<br/>    h1 = document.createElement('h1');<br/>    h1.innerHTML='Mass Delete Kindle Items';<br/>    hr=document.createElement('hr');<br/>    label=document.createElement('label');<br/>    label.for='mdki_input';<br/>    label.innerHTML='enter the title of the items you wish to delete';<br/>    <br/>    input=document.createElement('input');<br/>    input.type='text';<br/>    input.name='mdki_input';<br/>    input.id='mdki_input';<br/>    input.value='';<br/>    input.addEventListener('keyup', mdki_keyup);<br/>    <br/>    button=document.createElement('button');<br/>    button.id='mdki_button';<br/>    button.innerHTML='delete these items';<br/>    button.addEventListener('click',mdki_click)<br/>      <br/>    close_div=document.createElement('div');<br/>    close_div.id=&quot;close_div&quot;;<br/>    close_div.innerHTML= '&amp;#10006';   <br/>    close_div.addEventListener('click', close);<br/>    <br/>    div.appendChild(h1);<br/>    div.appendChild(hr);<br/>    div.appendChild(label);<br/>    div.appendChild(input);<br/>    div.appendChild(button);<br/>    div.appendChild(close_div);<br/>    document.body.appendChild(div);<br/>  } <br/>  <br/>  function mdki_click(event){<br/>    button=event.target<br/>    v=input.value;<br/>    button.setAttribute('disabled','disabled'); <br/>    delete_items();<br/>  }<br/>  <br/>  function mdki_keyup(event){<br/>    v=input.value;<br/>    for(var i = 0; i&lt;b.length; i++) {<br/>      b[i].className = b[i].className.replace(/mdki_highlight/g,'');        <br/>      if (b[i].textContent.match(v)){<br/>        b[i].className += &quot; mdki_highlight&quot;;  <br/>      }<br/>    }<br/>  }<br/><br/>  function close(event){<br/>    div.className = '';<br/>    input.value = '';<br/>    for(var i = 0; i&lt;b.length; i++) {  <br/>      b[i].className = b[i].className.replace(/mdki_highlight/g,'');        <br/>    }<br/>  }<br/><br/>  make_mdki_dom();<br/>  input.focus();<br/>  div.className = 'show';<br/>  <br/>  function delete_items(){<br/>    if (a.length == b.length){<br/>      for(var i = 0; i&lt;b.length; i++) {<br/>        if (b[i].textContent.match(v)) {<br/>          c.push([i]);<br/>          count +=1;<br/>        }<br/>      };<br/>      <br/>      if (count == 0){<br/>        alert(&quot;There are no items with the title '&quot;+v+&quot;' on this page&quot;)<br/>        button.removeAttribute('disabled');<br/>        v.value = &quot;&quot;;  <br/>      } else {<br/>      <br/>        var conf = confirm(count+&quot; items with the title:'&quot;+v+&quot;' will be deleted&quot;);      <br/>        <br/>        if (conf){<br/>          for (i in c){<br/>            Fion.deleteItem('deleteItem_'+a[c[i]].getAttribute('asin'));        <br/>          }<br/>        }<br/>        else {<br/>          c = [];<br/>          count = 0; <br/>          button.removeAttribute('disabled');<br/>          return false;  <br/>        }<br/>      }<br/>    }<br/>  }<br/>}<br/>mdki();<br/>
+            </code>
+          </pre>
+        </div>
+
+      </div>
+
+
+
+    </div> <!-- /container -->
+    
+    <div id="footer" class="panel-footer text-right ">
       <p>
-  <strong>IN SUMMARY:</strong>The MDKI bookmarklet is a simple javascript bookmarklet that enables you to delete multiple titles from your kindle library at once.
-</p>
-<p>
-  The creation of this bookmarklet would not have been possible without the keen insight of <a href="http://www.amazon.com/forum/kindle?_encoding=UTF8&cdForum=Fx1D7SY3BVSESG&cdPage=1&cdThread=Tx1NTIGX6GSG007">this</a> and <a href="http://www.amazon.com/forum/kindle/ref=cm_cd_t_rvt_np?_encoding=UTF8&cdForum=Fx1D7SY3BVSESG&cdPage=1&cdThread=Tx1NTIGX6GSG007#CustomerDiscussionsNew">this</a> forum thread on amazon, in which the participants already did all the real work. I just made it look pretty. I haven't done much browser testing yet, but you can email me at jan dot drewniak at gmail dot com for any support questions or suggestions to improve this.
-</p>
-<P style='text-align:right; '>
-   Jan Drewniak 2012
-  <a href='http://creativecommons.org/licenses/by-sa/3.0/legalcode'>
-    <img src='http://i.creativecommons.org/l/by-sa/3.0/88x31.png' />
-  </a>
-</P>
+        By <a href="http://j4n.co">Jan Drewniak</a> 2013
+        <a href='http://creativecommons.org/licenses/by-sa/3.0/legalcode'>
+          <img src='http://i.creativecommons.org/l/by-sa/3.0/88x31.png' />
+        </a>
+      </p>
     </div>
-  </body>
-</html>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+</body></html>
