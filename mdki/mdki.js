@@ -55,7 +55,7 @@ function mdki(){
     v=input.value;
 		for(var i = 0; i<b.length; i++) {
       b[i].className = b[i].className.replace(/mdki_highlight/g,'');        
-      if (b[i].textContent.match(v)){
+      if (b[i].textContent.match(new RegExp(v, "i"))){
         b[i].className += " mdki_highlight";  
       }
     }
