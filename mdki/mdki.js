@@ -3,6 +3,7 @@ function mdki(){
 	var input;
 	var button;
 	var v; 
+	var reg;
 	var a = document.getElementsByClassName('rowBodyCollapsed');
 	var b = document.getElementsByClassName('headerTitle');
 	var c = [];
@@ -47,15 +48,18 @@ function mdki(){
 	function mdki_click(event){
 		button=event.target
 		v=input.value;
+		reg = new RegExp(v, "gi");
 		button.setAttribute('disabled','disabled'); 
 		delete_items();
 	}
   
   function mdki_keyup(event){
     v=input.value;
+    reg = new RegExp(v, "gi");
+
 		for(var i = 0; i<b.length; i++) {
       b[i].className = b[i].className.replace(/mdki_highlight/g,'');        
-      if (b[i].textContent.match(new RegExp(v, "i"))){
+      if (b[i].textContent.match(reg)){
         b[i].className += " mdki_highlight";  
       }
     }
@@ -64,6 +68,7 @@ function mdki(){
 	function close(event){
 		div.className = '';
 		input.value = '';
+		reg = ''
 		for(var i = 0; i<b.length; i++) {  
       b[i].className = b[i].className.replace(/mdki_highlight/g,'');        
     }
@@ -74,18 +79,19 @@ function mdki(){
 	div.className = 'show';
   
 	function delete_items(){
+		reg = new RegExp(v, "gi");
 		if (a.length == b.length){
 			for(var i = 0; i<b.length; i++) {
-				if (b[i].textContent.match(v)) {
+				if (b[i].textContent.match(reg)) {
 					c.push([i]);
 					count +=1;
 				}
 			};
-			
 			if (count == 0){
 				alert("There are no items with the title '"+v+"' on this page")
 				button.removeAttribute('disabled');
 				v.value = "";  
+				reg = '';
 			} else {
 			
 			  var conf = confirm(count+" items with the title:'"+v+"' will be deleted");			
